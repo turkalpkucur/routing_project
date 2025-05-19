@@ -1,5 +1,8 @@
+
+import MainHeader from "@/components/main-header";
 import "./globals.css";
-import MainHeader from "./news/main-header";
+
+
 
 
 

@@ -2,8 +2,9 @@ import { DUMMY_NEWS } from "@/dummy-news";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default function NewsDetailPage({ params }) {
-    const newsSlug = params.slug;
+export default async function NewsDetailPage({ params }) {
+    let newsSlug = await params;// .slug;
+    newsSlug = newsSlug.slug;
     if (!newsSlug) {
         return;
     }

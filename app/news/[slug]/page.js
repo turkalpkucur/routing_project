@@ -12,6 +12,7 @@ export default async function NewsDetailPage({ params }) {
     if (!newsItem) {
         notFound();
     }
+    debugger;
     return (
         <article className="news-article">
             <header>

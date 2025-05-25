@@ -2,6 +2,7 @@ import { DUMMY_NEWS } from "@/dummy-news";
 import { notFound } from "next/navigation";
 
 export default async function InterceptedImagePage({ params }) {
+    debugger;
     let newsItemSlug = await params;
 
     newsItemSlug = newsItemSlug.slug;
@@ -12,11 +13,12 @@ export default async function InterceptedImagePage({ params }) {
     }
     return (
         <>
-            <h2>Intercepted!</h2>
-            <div className="fullscreen-image">
-                <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
-            </div>
+            <div className="modal-backdrop" />
+            <dialog className="modal" open>
+                <div className="fullscreen-image">
+                    <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+                </div>
+            </dialog >
         </>
-
     )
 }

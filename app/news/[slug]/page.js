@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default function NewsDetailPage({ params }) {
-    const newsSlug = params.slug;
+    let newsSlug = params.slug;
+
     if (!newsSlug) {
         return;
     }

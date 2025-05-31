@@ -3,8 +3,9 @@ import { getAvailableNewsMonths, getAvailableNewsYears, getNewsForYear, getNewsF
 import Link from "next/link";
 
 export default async function FilteredNewsPage({ params }) {
+ 
     const filter = await params;
-    console.log(filter);
+ 
 
 
     const selectedYear = filter?.filter?.[0];

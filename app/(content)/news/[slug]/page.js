@@ -3,10 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function NewsDetailPage({ params }) {
- 
+
     let newsSlug = await params;
 
- 
+
     if (!newsSlug) {
         return;
     }
@@ -14,7 +14,6 @@ export default async function NewsDetailPage({ params }) {
     if (!newsItem) {
         notFound();
     }
-    debugger;
     return (
         <article className="news-article">
             <header>

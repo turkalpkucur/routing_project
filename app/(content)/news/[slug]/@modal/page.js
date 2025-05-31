@@ -1,4 +1,3 @@
-export default function ModalDefaultPage() {
-    debugger;
+export default async function ModalDefaultPage() {
     return null;
 }

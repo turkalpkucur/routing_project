@@ -2,7 +2,7 @@ import { DUMMY_NEWS } from '@/dummy-news';
 import NewsList from "@/components/news-list";
 
 
-export default function NewsPage() {
+export default async function NewsPage() {
     return (
         <>
             <h1>   NEWS PAGE</h1>

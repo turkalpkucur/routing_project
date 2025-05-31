@@ -1,12 +1,12 @@
- 
 
 
-export default function NewsDetailLayout({ children, modal }) {
-    return
-    <>
-        {modal}
-        {children}
-    </>
 
- 
+export default async function NewsDetailLayout({ children, modal }) {
+    return (
+        <>
+            {modal}
+            {children}
+        </>
+    )
+
 }

@@ -3,12 +3,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function NewsDetailPage({ params }) {
-    let newsSlug = await params;// .slug;
-    newsSlug = newsSlug.slug;
+ 
+    let newsSlug = await params;
+
+ 
     if (!newsSlug) {
         return;
     }
-    const newsItem = DUMMY_NEWS.find(newsItem => newsItem.slug === newsSlug)
+    const newsItem = DUMMY_NEWS.find(newsItem => newsItem.slug === newsSlug.slug)
     if (!newsItem) {
         notFound();
     }

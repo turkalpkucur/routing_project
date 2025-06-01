@@ -3,9 +3,9 @@ import { DUMMY_NEWS } from "@/dummy-news";
 
 import { notFound, useRouter } from 'next/navigation';
 
-export default async function InterceptedImagePage({ params }) {
+export default function InterceptedImagePage({ params }) {
     const router = useRouter()
-    let newsItemSlug = await params;
+    let newsItemSlug = params;
 
     newsItemSlug = newsItemSlug.slug;
 

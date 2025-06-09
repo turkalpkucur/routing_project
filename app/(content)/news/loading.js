@@ -1,3 +1,3 @@
 export default function NewsLoading() {
-    return <p>LOADING...</p>
+    return <p>BEKLEYİNİZ...</p>
 }
